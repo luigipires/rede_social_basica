@@ -1,0 +1,885 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: arial;
+}
+html,body{
+	height: 100%;
+	background-color: #EAE9E9;
+}
+.clear{
+	clear: both;
+}
+
+/**header**/
+
+header{
+	padding: 0 2%;
+	background-color: #004d40;
+}
+.logo-header{
+	float: left;
+	margin-left: 30px;
+}
+.logo-header>a{
+	text-decoration: none;
+}
+.logo-header>a>h3{
+	float: left;
+	font-size: 70px;
+	padding-right: 12px;
+	color: white;
+}
+.logo-header>a>p{
+	float: left;
+	font-size: 27px;
+	margin-top: 35px;
+	font-weight: bold;
+	color: white;
+}
+.buttons{
+	float: right;
+	margin-right: 30px;
+}
+.buttons>a{
+	text-decoration: none;
+	font-size: 20px;
+	color: white;
+}
+.buttons>a>h3{
+	float: left;
+	font-size: 25px;
+	margin-top: 30px;
+	padding-right: 10px;
+	color: white;
+}
+.buttons>a>p{
+	float: left;
+	font-size: 20px;
+	margin-top: 35px;
+	font-weight: bold;
+	color: white;
+}
+.buttons>a>p:hover{
+	text-decoration: underline;
+}
+.mobile{
+	display: none;
+	float: right;
+	border: 2px solid white;
+	border-radius: 10px;
+	margin: 13px 30px 4px 0;
+}
+.mobile>h3{
+	font-size: 40px;
+	color: white;
+	cursor: pointer;
+	padding:5px 10px 3px 10px;
+}
+.mobile>ul{
+	list-style-type: none;
+	position: absolute;
+	left: 0;
+	top: 80px;
+	width: 100%;
+	background-color: #004d40;
+}
+.mobile>ul>li{
+	width: 100%;
+	padding: 15px 0;
+	text-align: center;
+	border-bottom: 1px solid white;
+}
+.mobile:hover{
+	background-color: #017B66;
+}
+.mobile>ul>li:hover{
+	background-color: #017B66;
+}
+.mobile>ul>li>a{
+	text-decoration: none;
+	font-size: 20px;
+	color: white;
+}
+.mobile>ul>li>a>h3{
+	font-size: 31px;
+	display: inline-block;
+	padding-right: 6px;
+	color: white;
+}
+.mobile>ul>li>a>p{
+	display: inline-block;
+	font-size: 23px;
+	font-weight: bold;
+	color: white;
+}
+
+/**user**/
+
+.area-user{
+	background-color: white;
+	width: 95%;
+	margin: 0 auto;
+	padding: 20px 0;
+}
+.perfil{
+	float: left;
+	width: 30%;
+	border-right: 2px solid #004d40;
+}
+.feed-news{
+	float: left;
+	width: 70%;
+}
+.perfil aside{
+	width: 80%;
+	margin: 0 auto;
+	padding: 10px;
+}
+.foto-user{
+	padding: 10px;
+}
+.foto-user>img{
+	max-width: 100%;
+	width: 100%;
+	height: 250px;
+	margin-top: 10px;
+	border-radius: 7px;
+	border: 1px solid #004d40;
+}
+.no-foto-user{
+	padding: 10px;
+	height: 200px;
+	margin-top: 10px;
+	background-color: #004d40;
+}
+.no-foto-user>h3{
+	font-size: 30px;
+	color: white;
+	text-align: center;
+	padding-top: 6px;
+}
+.nome-user{
+	padding: 10px 0;
+	border-radius: 3px;
+	background-color: #004d40;
+}
+.nome-user>a{
+	text-decoration: none;
+}
+.nome-user>a>h4{
+	font-size: 20px;
+	text-align: center;
+	color: white;
+}
+.lista-amigos{
+	margin-top: 15px;
+	background-color: #004d40;
+	padding: 10px 0;
+	border-radius: 3px;
+	text-align: center;
+}
+.lista-amigos>h3{
+	display: inline-block;
+	font-size: 30px;
+	padding-right: 6px;
+	color: white;
+	text-align: center;
+}
+.lista-amigos>h2{
+	font-size: 20px;
+	display: inline-block;
+	color: white;
+}
+.amigos-user{
+	padding: 10px 0;
+	float: left;
+	width: calc(100% / 3);
+	border-left:4px solid white;
+	border-right:4px solid white;
+	border-bottom:4px solid white;
+	height: 100px;
+}
+.amigos-user>a{
+	text-decoration: none;
+}
+.amigos-user>a>img{
+	max-width: 100%;
+	width: 100%;
+	height: 100px;
+	margin-top: 10px;
+	border-radius: 7px;
+}
+.feed-config{
+	width: 90%;
+	margin: 0 auto;
+}
+.status{
+	padding:10px;
+}
+.status>h2{
+	padding-left: 10px;
+	text-align: left;
+	color: #004d40;
+	font-size: 26px;
+}
+.status>form{
+	padding: 20px 0 0 0;
+	width: 90%;
+	margin: 0 auto;
+}
+.status>form>div{
+	padding: 10px 0;
+}
+.status>form>div>input[type=text]{
+	width: 100%;
+	height: 35px;
+	outline: 0;
+	border:2px solid #004d40;
+	border-radius: 6px;
+	padding: 10px;
+}
+.status>form>div>textarea{
+	width: 100%;
+	height: 125px;
+	resize: none;
+	outline: 0;
+	border:2px solid #004d40;
+	border-radius: 6px;
+	padding: 10px;
+}
+.status>form>div>input[type=file]{
+	cursor: pointer;
+}
+.status>form>div>input[type=submit]{
+	width: auto;
+	color: white;
+	height: 35px;
+	outline: 0;
+	background-color: #066F5D;
+	border:2px solid #009688;
+	font-family: arial;
+	font-size: 18.6px;
+	border-radius: 6px;
+	padding:0 15px;
+	cursor: pointer;
+}
+.status>form>div>input[type=submit]:hover{
+	background-color: #009688;
+}
+
+/**conteudo**/
+
+.conteudo-feed{
+	margin-top: 10px;
+	padding: 10px 20px;
+	border-top: 1px solid #004d40;
+	background-color: #A5CAC3;
+}
+.foto-user-post{
+	float: left;
+	padding: 10px 0;
+}
+.foto-user-post>img{
+	width: 80px;
+	max-width: 100%;
+	border-radius: 50px;
+	border: 1px solid #004d40;
+	height: 80px;
+}
+.info-user-content{
+	float: left;
+	padding:35px 10px;
+}
+.info-user-content>p{
+	font-size: 18px;
+}
+.conteudo-user{
+	text-align: right;
+}
+.foto-conteudo{
+	display: inline-block;
+	width: 90%;
+	padding: 0 30px;
+	margin-top: 30px;
+}
+.foto-conteudo>img{
+	max-width: 100%;
+	width: 100%;
+	height: 300px;
+}
+.conteudo-user-post{
+	width: 90%;
+	display: inline-block;
+}
+.conteudo-user-post>h4{
+	text-align: center;
+	font-size: 25px;
+	padding-bottom: 25px;
+	font-weight: 300;
+}
+.conteudo-user-post>p{
+	text-align: justify;
+	font-size: 17px;
+}
+
+
+/**comunidade**/
+
+.comunidade{
+	background-color: white;
+	width: 95%;
+	margin: 0 auto;
+	padding: 20px 30px;
+}
+.comunidade>h2{
+	text-align: center;
+	font-size: 22px;
+	color: #004d40;
+}
+.pessoas{
+	margin-top: 25px;
+	width: calc(100% / 3);
+	float: left;
+	padding: 5px 10px;
+}
+.pessoa-single{
+	width: 85%;
+	min-height: 350px;
+	margin: 0 auto;
+	border-radius: 6px;
+	background-color: #E4ECEA;
+}
+.pessoa-single>div{
+	text-align: center;
+}
+.pessoa-single>div>img{
+	max-width: 100%;
+	height: 240px;
+	border-radius: 3px;
+	width: 100%;
+}
+.pessoa-single>div>h3{
+	padding: 5px 0 10px 0;
+	display: inline-block;
+	font-size: 30px;
+	padding-right: 5px;
+	color: #004d40;
+}
+.pessoa-single>div>p{
+	display: inline-block;
+	font-size: 20px;
+	color: #004d40;
+}
+.pessoa-single>div>a{
+	display: inline-block;
+	font-size: 20px;
+	color: white;
+	text-decoration: none;
+	background-color: #A50016;
+	border-radius: 6px;
+	border:1px solid #DB0220;
+	padding: 7.5px 10px;
+	margin:5px 0 8px 0;
+}
+.pessoa-single>div>span{
+	display: inline-block;
+	font-size: 20px;
+	color: white;
+	background-color: #017FA5;
+	border-radius: 6px;
+	border:1px solid #02627E;
+	cursor:pointer;
+	padding: 7.5px 10px;
+	margin:5px 0 8px 0;
+}
+.pessoa-single>div>a:hover{
+	border:2px solid red;
+	background-color: #FF0628;
+}
+
+/**solicitacoes**/
+
+.solicitacoes{
+	background-color: white;
+	width: 95%;
+	margin: 0 auto;
+	padding: 20px 30px;
+}
+.solicitacoes>h2{
+	text-align: center;
+	font-size: 22px;
+	color: #004d40;
+}
+.friend{
+	width: 90%;
+	margin: 20px auto;
+}
+.friend-single{
+	width: calc(85% / 3);
+	float: left;
+	margin: 0 auto;
+	background-color: #E4ECEA;
+	border-radius: 6px;
+	min-height: 200px;
+}
+.foto-friend{
+	height: 150px;
+	margin: 0 auto;
+}
+.foto-friend>img{
+	max-width: 100%;
+	width: 100%;
+	height: 150px;
+}
+.lattes-friend{
+	width: 100%;
+	text-align: center;
+	margin: 5px auto;
+}
+.lattes-friend>h3{
+	padding: 5px 0 0 0;
+	display: inline-block;
+	font-size: 30px;
+	padding-right: 5px;
+	color: #004d40;
+}
+.lattes-friend>p{
+	display: inline-block;
+	font-size: 20px;
+	color: #004d40;
+}
+.buttons-friend{
+	margin-top: 15px;
+	text-align: center;
+}
+.buttons-friend>a{
+	font-size: 20px;
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+	background-color: #A50016;
+	border-radius: 6px;
+	border:1px solid #DB0220;
+	padding: 7.5px 10px;
+	margin:0 0 8px 0;
+}
+.buttons-friend>a:hover{
+	background-color: #DA001C;
+	border:2px solid #DB0220;
+}
+.buttons-friend>a:nth-of-type(2){
+	background-color: #0007A4;
+	border:1px solid #1002DA;
+}
+.buttons-friend>a:nth-of-type(2):hover{
+	background-color: #0009E4;
+	border:2px solid #1002DA;
+}
+
+/**suporte**/
+
+.suporte{
+	background-color: white;
+	width: 95%;
+	margin: 0 auto;
+	padding: 20px 30px;
+}
+.suporte>h2{
+	text-align: center;
+	font-size: 22px;
+	color: #004d40;
+}
+.ticket{
+	width: 90%;
+	margin: 20px auto;
+}
+.ticket>form{
+	width: 90%;
+	margin: 0 auto;
+}
+.ticket>form>div{
+	padding: 10px 0;
+}
+.ticket>form>div>p{
+	text-align: center;
+	font-size: 25px;
+	color: #004d40;
+	padding-bottom: 10px;
+}
+.ticket>form>div>textarea{
+	width: 100%;
+	height: 225px;
+	resize: none;
+	outline: 0;
+	border:2px solid #004d40;
+	border-radius: 6px;
+	padding: 10px;
+}
+.ticket>form>div>input[type=submit]{
+	width: 200px;
+	color: white;
+	margin: 0 auto;
+	display: block;
+	height: 45px;
+	outline: 0;
+	background-color: #066F5D;
+	border:2px solid #009688;
+	font-family: arial;
+	font-size: 22px;
+	border-radius: 6px;
+	padding:0 15px;
+	cursor: pointer;
+}
+
+/**resposta suporte**/
+
+.respostasuporte{
+	background-color: white;
+	width: 95%;
+	margin: 0 auto;
+	padding: 20px 30px;
+}
+.respostasuporte>h2{
+	text-align: center;
+	text-decoration: underline;
+	font-size: 22px;
+	padding: 15px 0 25px 0;
+	color: #004d40;
+}
+.respostasuporte>div{
+	width: 90%;
+	text-align: center;
+	border: 1px solid #004d40;
+	padding: 10px 0;
+	margin: 15px auto;
+}
+.respostasuporte>div>h4{
+	text-align: center;
+	font-size: 20px;
+	padding: 10px 20px;
+	color: #004d40;
+	display: inline-block;
+	border: 2px solid #004d40;
+}
+.respostasuporte>div>h3{
+	font-size: 20px;
+	padding: 10px 20px;
+	color: white;
+	display: inline-block;
+	background-color: #004d40;
+}
+.respostasuporte>div>p{
+	font-size: 22px;
+	padding-bottom: 10px;
+	color: #004d40;
+}
+.respostasuporte>form>div>textarea{
+	width: 100%;
+	height: 225px;
+	resize: none;
+	outline: 0;
+	border:2px solid #004d40;
+	border-radius: 6px;
+	padding: 10px;
+}
+.respostasuporte>form>div>input[type=submit]{
+	width: 200px;
+	color: white;
+	margin: 20px auto;
+	display: block;
+	height: 45px;
+	outline: 0;
+	background-color: #066F5D;
+	border:2px solid #009688;
+	font-family: arial;
+	font-size: 22px;
+	border-radius: 6px;
+	padding:0 15px;
+	cursor: pointer;
+}
+
+/**admin**/
+
+.admin{
+	background-color: white;
+	width: 95%;
+	margin: 0 auto;
+	padding: 20px 30px;
+}
+.admin>h2{
+	text-align: center;
+	font-size: 22px;
+	padding: 20px 0 10px 0;
+	color: #004d40;
+}
+.admin>div{
+	width: 90%;
+	margin: 30px auto;
+}
+.admin>div>h2{
+	font-size: 20px;
+	padding: 10px 20px;
+	color: #004d40;
+	display: inline-block;
+	border: 2px solid #004d40;
+}
+.admin>div>a{
+	font-size: 20px;
+	padding: 10px 20px;
+	text-decoration: none;
+	color: white;
+	display: inline-block;
+	background-color: #004d40;
+}
+.admin>div>a:hover{
+	text-decoration: underline;
+}
+.admin>form>div>textarea{
+	width: 100%;
+	height: 225px;
+	resize: none;
+	outline: 0;
+	border:2px solid #004d40;
+	border-radius: 6px;
+	padding: 10px;
+}
+.admin>form>div>input[type=submit]{
+	width: 200px;
+	color: white;
+	margin: 20px auto;
+	display: block;
+	height: 45px;
+	outline: 0;
+	background-color: #066F5D;
+	border:2px solid #009688;
+	font-family: arial;
+	font-size: 22px;
+	border-radius: 6px;
+	padding:0 15px;
+	cursor: pointer;
+}
+.admin>form>div>input[type=submit]:hover{
+	background-color: #07967D;
+	border:3px solid #01B4A3;
+}
+
+/**self-profile or someone profile**/
+
+.perfil-single{
+	background-color: white;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 20px 30px;
+}
+.info-perfil-single{
+	padding: 20px 0;
+	width: 100%;
+}
+.foto-perfil-single{
+	width: 300px;
+	height: 300px;
+	border-radius: 1000px;
+	border:3px solid black;
+	margin: 0 auto;
+}
+.foto-perfil-single>img{
+	max-width: 100%;
+	height: 100%;
+	border-radius: 1000px;
+}
+.user-perfil-single{
+	padding: 30px 0 0 0;
+	width: 100%;
+}
+.user-perfil-single>h2{
+	font-size: 30px;
+	color: #004d40;
+	text-align: center;
+	font-weight: 300;
+}
+.postagens-perfil{
+	max-width: 1000px;
+	margin: 30px auto;
+	text-align: center;
+}
+.postagens-perfil>h2{
+	display: inline-block;
+	font-weight: 300;
+	color: #004d40;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #004d40;
+	font-size: 20px;
+}
+
+/**mensagens**/
+
+.sucesso{
+	background-color: #42FE42;
+	text-align: center;
+	color: white;
+	padding: 10px 0;
+	font-size: 17px;
+	width: 100%;
+	margin: 20px 0;
+	font-weight: bold;
+	border:2px double green;
+}
+.sucesso>i{
+	padding-right: 10px;
+	font-size: 24px;
+	display: inline-block;
+}
+.erro{
+	background-color: #F73838;
+	text-align: center;
+	color: white;
+	width: 100%;
+	margin: 20px 0;
+	font-size: 17px;
+	font-weight: bold;
+	padding: 10px 0;
+	border:2px double red;
+}
+.erro>i{
+	padding-right: 10px;
+	font-size: 24px;
+	display: inline-block;
+}
+
+
+/*************/
+
+@media screen and (max-width: 975px){
+	.buttons{
+		display: none;
+	}
+	.mobile{
+		display: block;
+	}
+}
+
+@media screen and (max-width: 940px){
+	.pessoas{
+		width: calc(100% / 2);
+	}
+	.pessoa-single>div>span{
+		padding: 7.5px;
+	}
+}
+
+@media screen and (max-width: 900px){
+	.nome-user>a>h4{
+		font-size: 17px;
+	}
+	.lista-amigos>h3{
+		display:block;
+		font-size: 25px;
+		padding-right: 0;
+	}
+	.lista-amigos>h2{
+		font-size: 17px;
+		display: block;
+	}
+	.amigos-user{
+		float: none;
+		width: 90%;
+		margin: 0 auto;
+	}
+	.foto-user{
+		padding: 10px 0;
+	}
+	.foto-user>img{
+		width: 100%;
+		height: 150px;
+	}
+	.buttons-friend>a{
+		font-size: 15px;
+	}
+}
+
+@media screen and (max-width: 768px){
+	aside{
+		display: none;
+	}
+	.feed-news{
+		float: none;
+		width: 90%;
+		margin: 0 auto;
+	}
+	.status>h2{
+		padding-left: 0;
+		text-align: center;
+		font-size: 24px;
+	}
+	.status>form>div>textarea{
+		height: 155px;
+	}
+	.status>form>div>input[type=file]{
+		margin: 0 auto;
+		display: block;
+	}
+	.status>form>div>input[type=submit]{
+		display: block;
+		margin: 0 auto;
+		height: 40px;
+		padding:0 30px;
+	}
+	.friend-single{
+		width: 250px;
+		float: none;
+		margin: 10px auto;
+	}
+	.sucesso{
+		width: 100%;
+	}
+	.erro{
+		width: 100%;
+	}
+	.foto-conteudo{
+		width: 100%;
+	}
+	.conteudo-user-post{
+		width: 100%;
+	}
+	.conteudo-user-post>h4{
+		font-size: 20px;
+	}
+	.conteudo-user-post>p{
+		padding: 0 20px;
+	}
+	.respostasuporte>div>h4{
+		font-size: 18px;
+	}
+	.respostasuporte>div>p{
+		font-size: 16px;
+		padding-bottom: 5px;
+	}
+	.admin>div{
+		text-align: center;
+	}
+	.admin>div>h2{
+		font-size: 17px;
+	}
+	.admin>div>a{
+		font-size: 17px;
+	}
+}
+
+@media screen and (max-width: 650px){
+	.pessoas{
+		float: none;
+		width: 100%;
+	}
+	.pessoa-single{
+		width: 300px;
+	}
+}
+
+@media screen and (max-width: 520px){
+	.lista-amigos>h2{
+		font-size: 14px;
+		display: block;
+	}
+}
